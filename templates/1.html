@@ -1,1 +1,27 @@
+<html>
+<head><title>GeekDjango</title></head>
 
+<body>
+	
+<h1>GeekDjango</h1>
+
+<p>Hello {{ name }}</p>
+
+<ul>
+	{% for item in itemlist %}
+	<li>{{ item }}</li>
+	{% endfor %}	
+</ul>
+
+{% if status %}
+
+<p>I like Python</p>
+
+{% else %}
+
+<p>I like Django</p>
+
+{% endif %}
+
+</body>
+</html>
